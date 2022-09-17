@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+body{
+    display:contents;
+    position: absolute;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc1636f;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+
+.container {
+    position: relative;
+    max-width: 600px;
+    max-height: 400px;
+    background: #fff;
+    padding: 25px 2px;
+    border-radius: 5px;
+    left: 35%;
+}
+
+
+
+.container .title{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: #ffc1636f;
+}
+
+
+.container form .user-details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 15px 0 12px 0 ;
+}
+
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 10px;
+    
+}
+
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  
+}
+
+
+.user-details .input-box input{
+
+    height: 60%;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width:2px;
+    transition: all 0.3 ease;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:active{
+    border-color:#ffc1636f ;
+}
+
+form .pet-size .pet-title{
+    font-size: 20px; 
+    font-weight: 500;
+}
+
+.category{
+    margin: 10px;
+}
+
+.category label{
+    margin-right:20px !important;
+ 
+}
+
+
+form .button{
+    height: 30px;
+    width: 30px 0;
+}
+
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000;
+    background: #ffc1636f;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    
+}
+
+
+form .button:hover{
+    background: #ffc1639f;
+}
+
+@media (max-width:720px){
+    .container{
+            position: relative;
+            max-width: 600px;
+            max-height: 400px;
+            background: #fff;
+            padding: 25px 2px;
+            border-radius: 5px;
+    
+}
+
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    width: 100%;
+}
+
+
+.container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.user-details::-webkit-scrollbar{
+    width: 0;
+}
+
+
+}
