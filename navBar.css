@@ -90,7 +90,7 @@ button{
     
 }
 
-section, .checkbtn,#check {
+.problema, .checkbtn,#check {
     display: none;
 }
 
