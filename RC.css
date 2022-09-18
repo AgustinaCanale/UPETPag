@@ -140,7 +140,7 @@ form .button:hover{
 
 @media (max-width:720px){
     .container{
-            position: relative;
+        display: contents;
             max-width: 600px;
             max-height: 400px;
             background: #fff;
@@ -159,7 +159,7 @@ form .user-details .input-box{
 
 .container form .user-details{
     max-height: 300px;
-    overflow-y: scroll;
+    overflow-y:scroll;
 }
 
 .user-details::-webkit-scrollbar{
