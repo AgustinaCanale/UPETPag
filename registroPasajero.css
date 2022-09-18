@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden
+    
 
 }
 
@@ -15,7 +15,7 @@ body{
   
     align-items: center;
     justify-content: center;
-    background: #FBDCCC;
+    background: rgba(223, 247, 255, 0.35);
 }
 
 .wrapper {
@@ -24,11 +24,13 @@ body{
     max-width: 430px;
      max-height: 490px; 
     width: 100%;
-    background: #fff;
+    background: rgba(255, 193, 99, 0.4);
     padding: 30px;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
     left: 33.5%;
+
+    
   
     
 }
@@ -39,6 +41,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     color: #333;
+   
 }
 
 .wrapper h2::before{
@@ -49,7 +52,7 @@ body{
     height: 3px;
     width: 28px;
     border-radius: 12px;
-    background: #4070f4;  
+    background:  #FBDCCC;  
 }
 
 .wrapper form{
@@ -81,7 +84,7 @@ form .input-box input{
 
 .input-box input:focus,
 .input-box input:valid{
-border: 2px solid #4070f4;
+border: 2px solid  #4070f4;
 }
 
 form .policy{
@@ -91,7 +94,7 @@ form .policy{
 }
 
 form .policy h3{
-    color: #707070;
+    color: #333;
     font-size: 14px;
     font-weight: 500;
     margin-left: 10px;
@@ -110,13 +113,28 @@ form .input-box.button input{
     background: #0e4bf1; ;
 }
 
+.tengo a{
+    color: #000;
+    
+}
+
+.tengo a:hover{
+    color: #0e4bf1;
+}
+
 
 @media only screen and (max-width: 800px) {
+
+
+    *{
+        overflow: hidden
+    }
+
     .wrapper {
         display: contents;
-        position:fixed;
+        position:absolute;
         max-width: 430px;
-        width: 80%;
+        width: 95%;
         background: #fff;
         padding: 20px;
         border-radius: 6px;
@@ -124,5 +142,40 @@ form .input-box.button input{
         justify-content: center;
         justify-self: center;
         margin: 10px;
+        background: rgba(255, 193, 99, 0.4);
     }
+
+    .wrapper form{
+        margin-top: 30px;
+        background: rgba(255, 193, 99, 0.4);
+        border-radius: 5px;
+
 }
+
+
+
+.wrapper h2{
+    display: contents;
+}
+
+.wrapper h2::before{
+    display: none;
+}
+
+form .input-box input {
+    width: 95%;
+    padding: 0px 30px;
+    font-size: 17px;
+    font-weight: 400;
+    border: 2px solid #C7BEBE;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+
+    }
+
+
+   
