@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden
+
+}
+
+
+
+body{
+  
+    align-items: center;
+    justify-content: center;
+    background: #FBDCCC;
+}
+
+.wrapper {
+    display: flex;
+    position:absolute;
+    max-width: 430px;
+     max-height: 490px; 
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    left: 33.5%;
+  
+    
+}
+
+
+.wrapper h2{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.wrapper h2::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #4070f4;  
+}
+
+.wrapper form{
+    margin-top: 30px;
+
+}
+
+.wrapper form .input-box{
+    
+    margin: 10px 0;
+
+
+}
+
+form .input-box input{
+    height:80%;
+    width:100%;  
+    padding:0 30px;
+    font-size:17px;
+    font-weight:400;
+    border:2px solid #C7BEBE;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+    
+    
+    
+}
+
+.input-box input:focus,
+.input-box input:valid{
+border: 2px solid #4070f4;
+}
+
+form .policy{
+    display: flex;
+    align-items: center;
+
+}
+
+form .policy h3{
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+form .input-box.button input{
+    color: #fff;
+    background:#4070f4 ;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-box.button input:hover{
+    background: #0e4bf1; ;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        display: contents;
+        position:fixed;
+        max-width: 430px;
+        width: 80%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+        justify-content: center;
+        justify-self: center;
+        margin: 10px;
+    }
+}
