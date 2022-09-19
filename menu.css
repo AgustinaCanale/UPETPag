@@ -57,33 +57,58 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: contents;
+   
      box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
-    left: 43%;
+    left: 45%;
   }
 
 
-  .boton{
-    background: rgb(95, 101, 179);
-    background: linear-gradient(0deg, rgb(103, 108, 172) 0%, rgb(144, 148, 185) 100%);
+  .botones{
+    background: #000;
+    color: #fff;
     border: none;
   }
-  .boton:hover {
-     background: rgb(68, 70, 201);
-  background: linear-gradient(0deg, rgb(48, 50, 176) 0%, rgba(2,126,251,1) 100%);
+  .botones:hover {
+     background: rgb(109, 120, 190);
+     color: #000;
   }
 
 
   @media (max-width:720px){
+
+
+
     .conte-imagenes{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        position: static;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        padding: 10px;
+    
+        
     }
+
+
+
+    .imagen img{
+        width: 100px;
+        height: 100px;
+        justify-content: space-around;
+        border-radius: 100%;
+    }
+    
+
 
 
     .forma{
         left: 35%;
+        
     }
   }
